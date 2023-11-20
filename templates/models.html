@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Models</title>
+    <!-- Подключение Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Car Models</h1>
+    <ul>
+        {% for model in models %}
+            <li>{{ model.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

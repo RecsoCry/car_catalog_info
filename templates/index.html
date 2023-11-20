@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Catalog</title>
+    <!-- Подключение Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Car Brands</h1>
+    <ul>
+        {% for carmake in carmakes %}
+            <li><a href="{% url 'models' carmake.id %}">{{ carmake.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
